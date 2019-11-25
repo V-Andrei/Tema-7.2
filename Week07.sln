@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqAndLamdaExpressions", "LinqAndLamdaExpressions\LinqAndLamdaExpressions.csproj", "{5BAA95C6-5D34-446E-AB54-11F7A97E60C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs", "Structs\Structs.csproj", "{2131BCEC-6A17-4579-A991-D8252BAA8229}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BAA95C6-5D34-446E-AB54-11F7A97E60C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BAA95C6-5D34-446E-AB54-11F7A97E60C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BAA95C6-5D34-446E-AB54-11F7A97E60C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BAA95C6-5D34-446E-AB54-11F7A97E60C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2131BCEC-6A17-4579-A991-D8252BAA8229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2131BCEC-6A17-4579-A991-D8252BAA8229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2131BCEC-6A17-4579-A991-D8252BAA8229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2131BCEC-6A17-4579-A991-D8252BAA8229}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75EA6756-723D-4F7A-B8D7-17B5FD9642D0}
+	EndGlobalSection
+EndGlobal
