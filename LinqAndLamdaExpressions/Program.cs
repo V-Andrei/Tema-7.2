@@ -13,23 +13,39 @@
             var allPosts = ReadPosts("posts.json");
 
             // 1 - find all users having email ending with ".net".
-            //Ex1(allUsers);
+            Ex1(allUsers);
 
             // 2 - find all posts for users having email ending with ".net".
-            //Ex2(allUsers, allPosts);
+            Ex2(allUsers, allPosts);
 
             // 3 - print number of posts for each user.
-            //Ex3(allUsers, allPosts);
+            Ex3(allUsers, allPosts);
 
             // 4 - find all users that have lat and long negative.
-            //Ex4(allUsers);
+            Ex4(allUsers);
 
             // 5 - find the post with longest body.
-            //Ex5(allPosts);
+            Ex5(allPosts);
 
             // 6 - print the name of the employee that have post with longest body.
 
-        
+            var postBody = from post in allPosts
+                           select post.Body;
+
+            var length = postBody.Max(s => s.Length);
+
+            var biggest = postBody.FirstOrDefault(s => s.Length == length);
+
+            var nameEplouee = from post in allPosts
+                              where postBody.Contains(biggest)
+                              select post.UserId;
+
+            foreach (var item in nameEplouee)
+            {
+                Console.WriteLine(item.ToString());
+            }
+
+
 
             // 7 - select all addresses in a new List<Address>. print the list.
 
@@ -55,14 +71,14 @@
 
         private static void Ex5(List<Post> allPosts)
         {
-            var postBodyNumber = from post in allPosts
+            var postBody = from post in allPosts
                                  select post.Body;
 
-            var length = postBodyNumber.Max(s => s.Length);
+            var length = postBody.Max(s => s.Length);
 
-            var biggest = postBodyNumber.FirstOrDefault(s => s.Length == length);
+            var biggest = postBody.FirstOrDefault(s => s.Length == length);
 
-            Console.WriteLine(biggest.Length);
+            Console.WriteLine(biggest);
         }
 
         private static void Ex4(List<User> allUsers)
